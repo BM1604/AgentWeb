@@ -1,0 +1,26 @@
+{
+  "name": "agentweb",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Transform small business websites into agent-ready interfaces",
+  "dependencies": {
+    "@agentweb/cli": "workspace:*"
+  },
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "lint": "eslint packages/*/src apps/*/src",
+    "typecheck": "pnpm -r run typecheck"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "devDependencies": {
+    "eslint": "^9.17.0",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.2"
+  }
+}
